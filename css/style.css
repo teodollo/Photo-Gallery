@@ -7,22 +7,36 @@ header {
 }
 
 #searchbar {
-    padding: 10px 10rem;
+    padding: 15px 18% 15px 1rem;
     border-radius: 5px;
-    border: solid lightgray 2px;
+    border: solid rgb(224, 222, 222) 2px;
     text-align: left;
+    transition: transform 0.2s ease-in;
+}
 
+#searchbar:focus {
+    
+    transform: scale(1.1); 
+}
+
+input[placeholder="Search"] {
+    text-align: left;
 }
 
 .gallery {
+    margin-top: 1.5vh;
     margin-left: auto;
     margin-right: auto;
     max-width: 900px;
-    height: 900px;
-    
+    height: 700px;
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr) ;
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 7px;
+    
 }
+
+
+
+
+
 
