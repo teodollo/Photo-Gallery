@@ -5,15 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css" integrity="sha512-3eoKq7cU6gdVeT+6eL40YcJLD8dxzQmOK54qxUWVjg7H4NN3u5AA5k5ywrqLV15hOZDBBgdQH/GK5CA9MwDVwg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
     <title>PhotoGallery</title>
 </head>
 <body>
     <header>
-       <input id="searchbar" onkeyup="search_gallery()" type="text" name="search" placeholder="Search gallery...">
+       <input id="searchbar" onkeyup="search_gallery()" type="text" name="search" placeholder="Search">
     </header>
-    baguetteBox.run('.gallery');
+    <div class="gallery">
+        <a href="img/01.jpg" class="img" data-caption="
+        I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+            <img src="img/thumbnails/01.jpg"  alt="Hay Bales">
+        </a>
+        <a href="img/02.jpg" class="img" data-caption="
+        The lake was so calm today. We had a great view of the snow on the mountains from her">
+            <img src="img/thumbnails/02.jpg" alt="Lake">
+        </a>
+        <a href="img/03.jpg" class="img" data-caption="
+        I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+            <img src="img/thumbnails/03.jpg"  alt="Canyon">
+        </a>
+        <a href="img/04.jpg" class="img" data-caption="
+        It was amazing to see an iceberg up close, it was so cold but didn’t snow today. ">
+            <img src="img/thumbnails/04.jpg" alt="Iceberg">
+        </a>
+        <a href="img/05.jpg" class="img" data-caption="
+        The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+            <img src="img/thumbnails/05.jpg"  alt="Desert">
+        </a>
+        <a href="img/06.jpg" class="img" data-caption="
+        Fall is coming, I love when the leaves on the trees start to change color.">
+            <img src="img/thumbnails/06.jpg" alt="Fall is coming">
+        </a>
+        <a href="img/07.jpg" class="img" data-caption="
+        I drove past this plantation yesterday, everything is so green!">
+            <img src="img/thumbnails/07.jpg" alt="Plantation">
+        </a>
+        <a href="img/08.jpg" class="img" data-caption="
+        My summer vacation to the Oregon Coast. I love the sandy dunes!">
+            <img src="img/thumbnails/08.jpg"  alt="Dunes">
+        </a>
+        <a href="img/09.jpg" class="img" data-caption="
+        We enjoyed a quiet stroll down this countryside lane.">
+            <img src="img/thumbnails/09.jpg"  alt="Countryside Lane">
+        </a>
+        <a href="img/10.jpg" class="img" data-caption="
+        Sunset at the coast! The sky turned a lovely shade of orange.">
+            <img src="img/thumbnails/10.jpg"  alt="Sunset">
+        </a>
+        <a href="img/11.jpg" class="img" data-caption="
+        I did a tour of a cave today and the view of the landscape below was breathtaking.">
+            <img src="img/thumbnails/11.jpg"  alt="Cave">
+        </a>
+        <a href="img/12.jpg" class="img" data-caption="
+        I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+            <img src="img/thumbnails/12.jpg"  alt="Bluebells">
+        </a>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" integrity="sha512-7KzSt4AJ9bLchXCRllnyYUDjfhO2IFEWSa+a5/3kPGQbr+swRTorHQfyADAhSlVHCs1bpFdB1447ZRzFyiiXsg==" crossorigin="anonymous"></script>  
+
+        
+    </div>
+
+    <script src="js/search.js"></script>
+    <script src="js/baguetteBox.min.js" async></script>    
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+        </script>
 </body>
 </html>
